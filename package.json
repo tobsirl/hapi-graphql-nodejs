@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/tobsirl/hapi-graphql-nodejs#readme",
   "dependencies": {
-    "hapi": "^17.7.0"
+    "hapi": "^17.7.0",
+    "mongoose": "^5.3.11"
   }
 }
