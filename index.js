@@ -22,7 +22,6 @@ const init = async () => {
   mongoose
     .connect(
       mongoDB,
-      //process.env.mongoDB,
       {}
     )
     .then(
