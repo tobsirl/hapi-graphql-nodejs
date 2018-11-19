@@ -1,5 +1,6 @@
 const hapi = require('hapi');
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 // Create a server with a host and port
 const server = hapi.server({
@@ -21,5 +22,3 @@ const init = async () => {
 };
 
 init();
-
-
