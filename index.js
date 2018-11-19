@@ -17,7 +17,22 @@ server.route({
 });
 
 const init = async () => {
+  const { mongoDB } = process.env;
   await server.start();
+  mongoose
+    .connect(
+      mongoDB,
+      //process.env.mongoDB,
+      {}
+    )
+    .then(
+      () => {
+        console.log(`Connected to Mongo server`);
+      },
+      err => {
+        console.log(err);
+      }
+    );
   console.log(`Server running at: ${server.info.uri}`);
 };
 
