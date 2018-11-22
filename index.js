@@ -22,7 +22,7 @@ const init = async () => {
   mongoose
     .connect(
       mongoDB,
-      {}
+      { useNewUrlParser: true }
     )
     .then(
       () => {
